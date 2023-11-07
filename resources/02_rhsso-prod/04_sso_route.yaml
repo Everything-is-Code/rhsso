@@ -14,10 +14,6 @@ spec:
   tls:
     termination: passthrough
     insecureEdgeTerminationPolicy: Redirect
-    certificate: ''
-    key: ''
-    caCertificate: ''
-    destinationCACertificate: ''
   port:
     targetPort: keycloak
 
