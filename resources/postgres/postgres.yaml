@@ -24,7 +24,7 @@ spec:
           value: postgres
         - name: PGDATA
           value: /temp/data
-        image: image-registry.openshift-image-registry.svc:5000/postgres/build-postgres:latest
+        image: registry.redhat.io/rhel8/postgresql-12:1-150.1698060555 
         imagePullPolicy: Always
         name: postgres
         ports:
