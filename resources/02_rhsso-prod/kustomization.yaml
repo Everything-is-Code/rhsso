@@ -4,6 +4,8 @@ commonAnnotations:
   argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 resources:
 - 00_namespace_rhsso-prod.yaml
+- 00_namespace_postgres.yaml
+- 01_postgres.yaml
 - 01_rhsso-operator_resourcegroups.yaml
 - 01_secret_rhsso-prod-database.yaml
 - 02_rh-sso-operator.yaml
