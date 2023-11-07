@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - env:
-        - name: POSTGRES_DB
+        - name: POSTGRESQL_DATABASE
           value: postgres
         - name: POSTGRES_USER
           value: postgres
