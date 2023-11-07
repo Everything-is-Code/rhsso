@@ -20,9 +20,9 @@ spec:
       - env:
         - name: POSTGRESQL_DATABASE
           value: pgsql-rhsso-prod
-        - name: POSTGRES_USER
+        - name: POSTGRESQL_USER
           value: pgsql-admin
-        - name: POSTGRES_PASSWORD
+        - name: POSTGRESQL_PASSWORD
           value: pgsql-password
         - name: POSTGRESQL_ADMIN_PASSWORD
           value: pgsql-password
