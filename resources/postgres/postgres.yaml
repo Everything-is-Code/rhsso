@@ -17,11 +17,11 @@ spec:
       containers:
       - env:
         - name: POSTGRESQL_DATABASE
-          value: postgres
+          value: pgsql-rhsso-prod
         - name: POSTGRES_USER
-          value: postgres
+          value: pgsql-admin
         - name: POSTGRES_PASSWORD
-          value: postgres
+          value: pgsql-password
         - name: PGDATA
           value: /temp/data
         image: registry.redhat.io/rhel8/postgresql-12:1-150.1698060555 
@@ -43,7 +43,7 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: postgres
+    app: postgresql
   name: postgres
   namespace: postgres
 spec:
