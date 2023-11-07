@@ -22,6 +22,8 @@ spec:
           value: pgsql-admin
         - name: POSTGRES_PASSWORD
           value: pgsql-password
+        - name: POSTGRESQL_ADMIN_PASSWORD
+          value: pgsql-password
         - name: PGDATA
           value: /temp/data
         image: registry.redhat.io/rhel8/postgresql-12:1-150.1698060555 
