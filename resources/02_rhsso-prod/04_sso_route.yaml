@@ -1,0 +1,23 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "4"
+  name: sso
+  namespace: rhsso-prod
+  labels:
+    app: keycloak
+spec:
+  to:
+    kind: Service
+    name: keycloak
+  tls:
+    termination: passthrough
+    insecureEdgeTerminationPolicy: Redirect
+    certificate: ''
+    key: ''
+    caCertificate: ''
+    destinationCACertificate: ''
+  port:
+    targetPort: keycloak
+
