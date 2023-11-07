@@ -4,3 +4,4 @@ commonAnnotations:
   argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 resources:
 - 02_rhsso-prod.yaml
+- 03_postgres.yaml
